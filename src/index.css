@@ -1,0 +1,156 @@
+@import "tailwindcss";
+
+/* ----------------- DESIGN SYSTEM VARIABLES ----------------- */
+.dark-theme {
+  --theme-bg: #0F0F0F;
+  --theme-card: #161616;
+  --theme-border: #2A2A2A;
+  --theme-gold: #D4AF37;
+  --theme-text-primary: #E0E0E0;
+  --theme-text-secondary: #A0A0A0;
+}
+
+.bright-theme {
+  --theme-bg: #F4F4F6;
+  --theme-card: #FFFFFF;
+  --theme-border: #E2E2E8;
+  --theme-gold: #996515; /* Rich gold/bronze optimized for proper legibility and AAA contrast */
+  --theme-text-primary: #1C1C1E;
+  --theme-text-secondary: #6E6E73;
+}
+
+/* Smooth transitions for a high-end feel */
+* {
+  transition-property: background-color, border-color, text-decoration-color, fill, stroke;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ----------------- LIGHT/BRIGHT THEME OVERRIDES ----------------- */
+
+/* Dynamic backgrounds */
+.bright-theme .bg-\[\#0F0F0F\] {
+  background-color: var(--theme-bg) !important;
+}
+.bright-theme .bg-\[\#161616\] {
+  background-color: var(--theme-card) !important;
+  border-color: var(--theme-border) !important;
+}
+.bright-theme .bg-\[\#1A1A1A\] {
+  background-color: #F4F4F6 !important;
+  border-color: var(--theme-border) !important;
+}
+.bright-theme .bg-\[\#1C1C1C\] {
+  background-color: #EBEBEF !important;
+}
+
+/* Dynamic texts */
+.bright-theme .text-\[\#E0E0E0\] {
+  color: var(--theme-text-primary) !important;
+}
+.bright-theme .text-\[\#A0A0A0\] {
+  color: var(--theme-text-secondary) !important;
+}
+.bright-theme .text-\[\#D4AF37\] {
+  color: var(--theme-gold) !important;
+}
+
+/* Dynamic borders */
+.bright-theme .border-\[\#2A2A2A\] {
+  border-color: var(--theme-border) !important;
+}
+.bright-theme .border-\[\#D4AF37\]\/40 {
+  border-color: rgba(153, 101, 21, 0.4) !important;
+}
+.bright-theme .border-\[\#D4AF37\]\/30 {
+  border-color: rgba(153, 101, 21, 0.3) !important;
+}
+.bright-theme .hover\:border-\[\#D4AF37\]\/50:hover {
+  border-color: rgba(153, 101, 21, 0.6) !important;
+}
+
+/* Hovers */
+.bright-theme .hover\:bg-\[\#1A1A1A\]:hover {
+  background-color: #F4F4F6 !important;
+}
+.bright-theme .hover\:bg-\[\#202020\]:hover {
+  background-color: #E2E2E8 !important;
+}
+.bright-theme .hover\:bg-\[\#1C1C1C\]:hover {
+  background-color: #EBEBEF !important;
+}
+
+/* Slate override mappings */
+.bright-theme .bg-slate-900 {
+  background-color: #F4F4F6 !important;
+  color: #1A1A1A !important;
+  border-color: #E2E2E8 !important;
+}
+.bright-theme .text-slate-300 {
+  color: #4A4A4F !important;
+}
+.bright-theme .text-slate-200 {
+  color: #1A1A1A !important;
+}
+.bright-theme .text-slate-400 {
+  color: #6E6E73 !important;
+}
+.bright-theme .border-slate-800 {
+  border-color: #E2E2E8 !important;
+}
+.bright-theme .bg-slate-800\/50 {
+  background-color: #EBEBEF !important;
+  border-color: #E2E2E8 !important;
+}
+
+/* Inputs, Selects, Textareas form styles in bright mode */
+.bright-theme select,
+.bright-theme input,
+.bright-theme textarea {
+  background-color: #FFFFFF !important;
+  color: #1C1C1E !important;
+  border-color: #E2E2E8 !important;
+}
+.bright-theme select:focus,
+.bright-theme input:focus,
+.bright-theme textarea:focus {
+  border-color: var(--theme-gold) !important;
+  outline: none !important;
+}
+
+/* ----------------- DARK THEME OVERRIDES ----------------- */
+
+/* Automatically match standard components (like Timeline & Skills with bg-white classes) to Dark Theme style */
+.dark-theme .bg-white {
+  background-color: #161616 !important;
+  border-color: #2A2A2A !important;
+}
+.dark-theme .text-slate-900 {
+  color: #E0E0E0 !important;
+}
+.dark-theme .text-slate-800 {
+  color: #CCCCCC !important;
+}
+.dark-theme .text-slate-700 {
+  color: #B5B5B5 !important;
+}
+.dark-theme .text-slate-600 {
+  color: #A0A0A0 !important;
+}
+.dark-theme .text-slate-500 {
+  color: #888888 !important;
+}
+.dark-theme .bg-slate-100 {
+  background-color: #0F0F0F !important;
+  color: #A0A0A0 !important;
+}
+.dark-theme .bg-slate-50 {
+  background-color: #121212 !important;
+}
+.dark-theme .border-slate-200,
+.dark-theme .border-slate-100 {
+  border-color: #2A2A2A !important;
+}
+.dark-theme .hover\:bg-slate-50:hover {
+  background-color: #1C1C1C !important;
+}
