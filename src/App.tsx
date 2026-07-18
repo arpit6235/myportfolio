@@ -71,15 +71,25 @@ export default function App() {
       
       {/* Top Header Block (Extracted exactly from Sophisticated Dark design specs) */}
       <header className="max-w-7xl w-full mx-auto px-4 sm:px-12 pt-8 sm:pt-12 pb-6 border-b border-[#2A2A2A] flex flex-col sm:flex-row justify-between items-start sm:items-end gap-6">
-        <div className="space-y-2">
-          <h1 className="text-4xl sm:text-6xl font-serif text-[#D4AF37] leading-tight font-bold tracking-tight">
-            Arpit Tiwari
-          </h1>
-          <p className="text-sm sm:text-base tracking-[0.2em] uppercase text-[#A0A0A0] font-light">
-            Java Full Stack Developer
-          </p>
+        <div className="flex flex-col sm:flex-row sm:items-center gap-6">
+          <div className="flex-shrink-0">
+            <img
+              src="/arpit-photo.jpg"
+              alt="Arpit Tiwari"
+              className="w-32 h-32 sm:w-36 sm:h-36 rounded-full border-3 border-cyan-500/20 object-cover shadow-2xl"
+            />
+          </div>
+          <div className="space-y-2">
+            <h1 className="text-4xl sm:text-6xl font-serif text-[#D4AF37] leading-tight font-bold tracking-tight">
+              Arpit Tiwari
+            </h1>
+            <p className="text-sm sm:text-base tracking-[0.2em] uppercase text-[#A0A0A0] font-light">
+              Java Full Stack Developer
+            </p>
+          </div>
         </div>
-        <div className="text-left sm:text-right space-y-1">
+
+        <div className="text-left sm:text-right space-y-1 py-12">
           <p className="text-[#A0A0A0] text-xs sm:text-sm tracking-wider uppercase font-medium">
             Jaunpur & Prayagraj, Uttar Pradesh
           </p>
@@ -105,17 +115,17 @@ export default function App() {
               <div className="relative pl-4 border-l border-[#2A2A2A] hover:border-[#D4AF37]/50 transition-colors">
                 <p className="text-xs text-[#888] font-mono">B.Tech &bull; Computer Science & Engineering</p>
                 <p className="text-sm font-semibold text-slate-200">SIET, Prayagraj</p>
-                <span className="text-[10px] text-[#A0A0A0]">2021 &mdash; 2025</span>
+                <span className="text-[10px] text-[#A0A0A0]">2023 &mdash; 2026</span>
               </div>
               <div className="relative pl-4 border-l border-[#2A2A2A] hover:border-[#D4AF37]/50 transition-colors">
                 <p className="text-xs text-[#888] font-mono">Diploma &bull; Electrical Eng.</p>
                 <p className="text-sm font-semibold text-slate-200">M.G. Polytechnic, Prayagraj</p>
-                <span className="text-[10px] text-[#A0A0A0]">2018 &mdash; 2021</span>
+                <span className="text-[10px] text-[#A0A0A0]">2021 &mdash; 2023</span>
               </div>
               <div className="relative pl-4 border-l border-[#2A2A2A] hover:border-[#D4AF37]/50 transition-colors">
                 <p className="text-xs text-[#888] font-mono">Intermediate &bull; PCM</p>
                 <p className="text-sm font-semibold text-slate-200">N.B.I.C., Jaunpur</p>
-                <span className="text-[10px] text-[#A0A0A0]">Completed 2018</span>
+                <span className="text-[10px] text-[#A0A0A0]">2021</span>
               </div>
             </div>
           </div>

@@ -3,7 +3,7 @@ import { TimelineEvent, Project, SkillCategory, QuizQuestion } from './types';
 export const TIMELINE_DATA: TimelineEvent[] = [
   {
     id: 'btech',
-    period: '2021 - 2025',
+    period: '2023 - 2026',
     title: 'Bachelor of Technology (B.Tech) in Computer Science & Engineering',
     institution: 'Shambhunath Institute of Engineering & Technology (SIET)',
     location: 'Prayagraj (Allahabad), Uttar Pradesh',
@@ -13,7 +13,7 @@ export const TIMELINE_DATA: TimelineEvent[] = [
   },
   {
     id: 'diploma',
-    period: '2018 - 2021',
+    period: '2021 - 2023',
     title: 'Diploma in Electrical Engineering',
     institution: 'M.G. Polytechnic',
     location: 'Prayagraj, Uttar Pradesh',
@@ -23,7 +23,7 @@ export const TIMELINE_DATA: TimelineEvent[] = [
   },
   {
     id: 'intermediate',
-    period: '2016 - 2018',
+    period: '2021',
     title: 'Intermediate Education (12th Grade - PCM)',
     institution: 'N.B.I.C.',
     location: 'Ghaghariya, Jaunpur, Uttar Pradesh',
@@ -33,7 +33,7 @@ export const TIMELINE_DATA: TimelineEvent[] = [
   },
   {
     id: 'highschool',
-    period: '2014 - 2016',
+    period: '2019',
     title: 'High School Education (10th Grade)',
     institution: 'Shanti Higher Secondary School',
     location: 'Gonapar, Jaunpur, Uttar Pradesh',

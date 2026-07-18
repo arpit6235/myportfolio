@@ -28,24 +28,27 @@ export default function Hero({ onNavigate }: HeroProps) {
         </motion.div>
 
         {/* Name and Title */}
-        <div className="space-y-4">
-          <motion.h1
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-4xl sm:text-6xl font-extrabold tracking-tight"
-          >
-            Arpit Tiwari
-          </motion.h1>
+        <div className="flex flex-col sm:flex-row sm:items-center gap-6">
+          
+          <div className="space-y-4">
+            <motion.h1
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="text-4xl sm:text-6xl font-extrabold tracking-tight"
+            >
+              Arpit Tiwari
+            </motion.h1>
 
-          <motion.p
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg sm:text-2xl text-slate-300 font-medium max-w-2xl leading-relaxed"
-          >
-            Aspiring <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400 font-semibold">Java Full Stack Developer</span> & Computer Science Graduate.
-          </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="text-lg sm:text-2xl text-slate-300 font-medium max-w-2xl leading-relaxed"
+            >
+              Aspiring <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400 font-semibold">Java Full Stack Developer</span> & Computer Science Graduate.
+            </motion.p>
+          </div>
         </div>
 
         {/* Location & Institution Tags */}
