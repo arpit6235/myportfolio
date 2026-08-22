@@ -91,7 +91,7 @@ export default function App() {
 
         <div className="text-left sm:text-right space-y-1 py-12">
           <p className="text-[#A0A0A0] text-xs sm:text-sm tracking-wider uppercase font-medium">
-            Jaunpur & Prayagraj, Uttar Pradesh
+            Jaunpur, Prayagraj & Uttar Pradesh
           </p>
           <p className="text-[#D4AF37] font-serif italic text-sm sm:text-base">
             arpit6235@gmail.com
