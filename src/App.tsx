@@ -76,7 +76,7 @@ export default function App() {
             <img
               src="/arpit-photo.jpg"
               alt="Arpit Tiwari"
-              className="w-32 h-32 sm:w-36 sm:h-36 rounded-full border-3 border-cyan-500/20 object-cover shadow-2xl"
+              className="w-32 h-32 sm:w-36 sm:h-36 rounded-full border-3  border-cyan-500/20 object-cover shadow-2xl"
             />
           </div>
           <div className="space-y-2">
